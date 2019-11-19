@@ -20,14 +20,14 @@ fi
 #
 
 # Disable correction.
-alias ack='nocorrect ack'
+# alias ack='nocorrect ack'
 alias cd='nocorrect cd'
 alias cp='nocorrect cp'
-alias ebuild='nocorrect ebuild'
+# alias ebuild='nocorrect ebuild'
 alias gcc='nocorrect gcc'
-alias gist='nocorrect gist'
+# alias gist='nocorrect gist'
 alias grep='nocorrect grep'
-alias heroku='nocorrect heroku'
+# alias heroku='nocorrect heroku'
 alias ln='nocorrect ln'
 alias man='nocorrect man'
 alias mkdir='nocorrect mkdir'
@@ -35,8 +35,8 @@ alias mv='nocorrect mv'
 alias mysql='nocorrect mysql'
 alias rm='nocorrect rm'
 
-# Disable globbing.
-alias bower='noglob bower'
+# Disable alias.
+# alias bower='noglob bower'
 alias fc='noglob fc'
 alias find='noglob find'
 alias ftp='noglob ftp'
@@ -55,9 +55,9 @@ alias diffu="diff --unified"
 alias e='${(z)VISUAL:-${(z)EDITOR}}'
 alias mkdir="${aliases[mkdir]:-mkdir} -p"
 alias p='${(z)PAGER}'
-alias po='popd'
-alias pu='pushd'
-alias sa='alias | grep -i'
+# alias po='popd'
+# alias pu='pushd'
+# alias sa='alias | grep -i'
 alias type='type -a'
 
 # Safe ops. Ask the user before doing anything destructive.

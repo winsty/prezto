@@ -11,3 +11,19 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+
+if [[ -s "${ZDOTDIR:-$HOME}/.servers" ]]; then
+	source "${ZDOTDIR:-$HOME}/.servers"
+fi
+
+# Aliases
+alias ls='ls -G'
+alias ll='ls -l'
+alias vi='vim'
+alias zshconfig="vi ~/.zshrc"
+alias ohmyzsh="vi ~/.oh-my-zsh"
+alias rm='rm -i'
+alias tree='tree -C'
+alias top='htop'
+alias jumper='ssh lc48680@ssh.17usoft.com'
+alias centos='docker exec -it centos7 /bin/bash'

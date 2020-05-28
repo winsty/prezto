@@ -12,18 +12,36 @@ fi
 
 # Customize to your needs...
 
-if [[ -s "${ZDOTDIR:-$HOME}/.servers" ]]; then
-	source "${ZDOTDIR:-$HOME}/.servers"
-fi
+#
+# Go
+#
+export GOPATH=$HOME/go
+# Enable the go modules feature
+export GO111MODULE=auto
+# Set the GOPROXY environment variable
+export GOPROXY=https://goproxy.io
+
+export PATH=/usr/local/opt/mysql-client/bin:/Library/TeX/texbin::$PATH
+export PATH=$HOME/bin:$HOME/.emacs.d/bin:$GOPATH/bin:$PATH
+
+#
+# brew
+#
+export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles
+
+#
+# Hugo
+#
+HUGO_BASE_DIR=$HOME/Documents/blog/content/post
+HUGO_SECTION=post
 
 # Aliases
 alias ls='ls -G'
 alias ll='ls -l'
 alias vi='vim'
 alias zshconfig="vi ~/.zshrc"
-alias ohmyzsh="vi ~/.oh-my-zsh"
 alias rm='rm -i'
 alias tree='tree -C'
 alias top='htop'
-alias jumper='ssh lc48680@ssh.17usoft.com'
 alias centos='docker exec -it centos7 /bin/bash'
+alias dyps='dyps -s dev:C23A1F12722732D2_product:622BC147F2F1CE2C'

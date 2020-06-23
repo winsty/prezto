@@ -22,7 +22,7 @@ export GO111MODULE=auto
 export GOPROXY=https://goproxy.io
 
 export PATH=/usr/local/opt/mysql-client/bin:/Library/TeX/texbin::$PATH
-export PATH=$HOME/bin:$HOME/.emacs.d/bin:$GOPATH/bin:$PATH
+export PATH=$HOME/bin:$GOPATH/bin:$PATH
 
 #
 # brew

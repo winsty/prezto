@@ -29,12 +29,6 @@ export PATH=$HOME/bin:$GOPATH/bin:$PATH
 #
 export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles
 
-#
-# Hugo
-#
-HUGO_BASE_DIR=$HOME/Documents/blog/content/post
-HUGO_SECTION=post
-
 # Aliases
 alias ls='ls -G'
 alias ll='ls -l'
@@ -43,5 +37,6 @@ alias zshconfig="vi ~/.zshrc"
 alias rm='rm -i'
 alias tree='tree -C'
 alias top='htop'
-alias centos='docker exec -it centos7 /bin/bash'
+#alias centos='docker exec -it centos7 /bin/bash'
 alias dyps='dyps -s dev:C23A1F12722732D2_product:622BC147F2F1CE2C'
+alias jumper='ssh lc48680@10.100.10.137'
